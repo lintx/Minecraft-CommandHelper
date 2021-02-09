@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.lintx.plugins.modules</groupId>
+    <artifactId>CommandHelper</artifactId>
+    <version>1.0</version>
+
+    <name>CommandHelper</name>
+    <description>Help you quickly create minecraft plugin commands.</description>
+    <url>https://github.com/lintx/Minecraft-CommandHelper</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://github.com/lintx/Minecraft-CommandHelper/blob/master/LICENSE</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>LinTx</name>
+            <email>lintx@lintx.org</email>
+            <url>https://github.com/lintx/</url>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@github.com:lintx/Minecraft-CommandHelper.git</connection>
+        <developerConnection>scm:git:git@github.com:lintx/Minecraft-CommandHelper.git</developerConnection>
+        <url>git@github.com:lintx/Minecraft-CommandHelper.git</url>
+    </scm>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>net.md-5</groupId>
+            <artifactId>bungeecord-api</artifactId>
+            <version>1.16-R0.2-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>net.md-5</groupId>
+            <artifactId>bungeecord-api</artifactId>
+            <version>1.16-R0.2-SNAPSHOT</version>
+            <classifier>sources</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot</artifactId>
+            <version>1.13.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/spigot-1.13.2.jar</systemPath>
+        </dependency>
+    </dependencies>
+</project>
